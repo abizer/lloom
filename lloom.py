@@ -33,6 +33,8 @@ class Lloom:
         "gpt-4-32k-0613": 32768,
         "gpt-3.5-turbo": 4096,
         "gpt-3.5-turbo-0301": 4096,
+        "gpt-3.5-turbo-1106": 4096,
+        "gpt-4-1106-preview": 128000,
     }
 
     def __init__(self, config: LloomConfig):
