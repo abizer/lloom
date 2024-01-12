@@ -52,7 +52,7 @@ class Lloom:
         self.top_p = config.top_p
         self.frequency_penalty = config.frequency_penalty
         self.presence_penalty = config.presence_penalty
-        self.system_message: Dict[str, str] = {"role": "system", "content": config.system_message} if config.system_message else None
+        self.system_message: Dict[str, str] = {"role": "system", "content": config.system_message or ""}
         self.messages: List[Dict[str, str]] = [self.system_message] if config.system_message else []
         if config.logging:
             self.logger.setLevel(logging.INFO)
