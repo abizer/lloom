@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lloom"
+version = "0.1.0"
+description = "A simple OpenAI API wrapper"
+authors = ["Your Name <you@example.com>"]
+license = "Apache2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^2.5.3"
+requests = "^2.31.0"
+tiktoken = "^0.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
